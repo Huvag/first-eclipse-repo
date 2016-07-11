@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="TodoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  	<script type="text/javascript" src="js/control.js"></script>
+  	<link rel="stylesheet" href="css/todo.css">
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+    <h2>To do</h2>
+    <div ng-controller="TodoCtrl">
+    <span>{{todos.length}} remaining</span> </div>
+  </body>
+</html>
